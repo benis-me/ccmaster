@@ -911,7 +911,7 @@ class CCMaster:
             
             # Clean up temp file after a delay
             def cleanup_temp():
-                time.sleep(1)  # Give time for the command to be read
+                time.sleep(30)  # Give plenty of time for the command to be read, especially for long prompts
                 try:
                     os.unlink(temp_file.name)
                 except:

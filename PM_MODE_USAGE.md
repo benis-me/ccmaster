@@ -387,4 +387,4 @@ This is normal! PM Claude uses MCP tools to create instances, which happens quic
 - New instances appear with incrementing indices ([1], [2], etc.)
 - PM session never receives auto-continue commands
 - Monitor runs quietly in background, only reporting when JSON blocks are found
-- Temporary files are cleaned up after 10 seconds
+- Temporary files are cleaned up after 10 seconds (increased from 1 second to fix long prompt issues)
